@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Café Aurora - Menú</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+  <header>
+    <h1>Menú de Productos</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="menu.html">Menú</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section id="filtroProductos">
+      <input type="text" id="filtro" placeholder="Buscar producto...">
+    </section>
+
+    <section id="listaProductos">
+      <ul id="productos">
+        <!-- Aquí van los productos, cada uno con botones y checkbox -->
+      </ul>
+    </section>
+
+    <button id="btnAgregar">Agregar Producto</button>
+
+    <section id="seccionAgregar" style="display: none;">
+      <input type="text" id="nuevoNombre" placeholder="Nombre del producto">
+      <input type="text" id="nuevoPrecio" placeholder="Precio">
+      <button id="btnGuardarNuevo">Guardar</button>
+    </section>
+
+    <p id="productosSeleccionados">Productos seleccionados: <span id="contadorSeleccionados">0</span></p>
+
+    <section id="recomendaciones">
+      <!-- Aquí se mostrarán las recomendaciones del día -->
+    </section>
+
+  </main>
+
+  <script src="js/menu.js"></script>
+</body>
+</html>
